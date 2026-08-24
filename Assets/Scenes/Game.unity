@@ -6717,6 +6717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KunaiGun
       objectReference: {fileID: 0}
+    - target: {fileID: 1522441639043536103, guid: ee877ac0c07079a46a8a29e403374e53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3369381968658406495, guid: ee877ac0c07079a46a8a29e403374e53,
         type: 3}
       propertyPath: master
@@ -6737,7 +6742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507932864357139613}
   - component: {fileID: 8837897641464406458}
-  - component: {fileID: 2978272265025603912}
+  - component: {fileID: 8837897641464406459}
   m_Layer: 0
   m_Name: ShotGun
   m_TagString: Untagged
@@ -6916,24 +6921,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fb611a2214b0aa4893476eea189ddb9, type: 3}
---- !u!114 &2978272265025603912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1348350138887062000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2340400d1b2a4e6428875bb5cb29e6c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabBullet: {fileID: 3847154798493980954, guid: 5062fa99314fe7c4694cc5243d188e12,
-    type: 3}
-  ShotPower: 10
-  searchRadius: 10
-  fireInterval: 0.5
-  master: {fileID: 0}
 --- !u!1001 &8140706844494771534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7074,6 +7061,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8837897641464406459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348350138887062000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdad0c75db287d848acd8fbb18c2d313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBullet: {fileID: 3847154798493980954, guid: 5062fa99314fe7c4694cc5243d188e12,
+    type: 3}
+  ShotPower: 10
+  searchRadius: 10
+  bulletCount: 5
+  spreadAngle: 30
+  fireInterval: 1
+  fireTimer: 0
+  master: {fileID: 1031182656}
+  showGizmos: 1
+  searchColor: {r: 0, g: 1, b: 0, a: 1}
+  spreadColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
